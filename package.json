@@ -1,0 +1,12 @@
+{
+    "name": "Flickr Screensaver",
+    "version": "0.0.1",
+    "description": "A small tool to download images from a flickr group and use them as wallpaper",
+    "author": "Niklas Köhler (http://www.niklaskoehler.de/",
+    "license": "ISC",
+    "dependencies": {
+        "flickrapi": "^0.3.23",
+        "forEachAsync": "^3.0.0",
+        "request": "^2.40.0"
+    }
+}
