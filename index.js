@@ -8,6 +8,10 @@ var fs            = require('fs'),
       secret: options.flickr.secret
     };
 
+/**
+ * Constructor for FlickrScreensaver
+ * @constructor
+ */
 function FlickrScreensaver() {
 	this.images = [];
 
@@ -24,6 +28,9 @@ function FlickrScreensaver() {
 	};
 }
 
+/**
+ * Builder for the Screensaver tool. Starts delete and save methods
+ */
 FlickrScreensaver.prototype.build = function() {
 	var self     = this,
 		options  = this.options;
@@ -61,7 +68,9 @@ FlickrScreensaver.prototype.build = function() {
 
 };
 
-
+/**
+ * Runs through the list and looks for given image
+ */
 FlickrScreensaver.prototype.downloadImages = function() {
 	var self = this,
 		images = this.images;
@@ -86,6 +95,13 @@ FlickrScreensaver.prototype.downloadImages = function() {
      });
 };
 
+/**
+ *
+ *
+ * @param url {string}
+ * @param fileName {string}
+ * @param cb {function}
+ */
 FlickrScreensaver.prototype.saveImage = function(url, fileName, cb) {
 	var target = this.directory;
 
@@ -106,6 +122,9 @@ FlickrScreensaver.prototype.saveImage = function(url, fileName, cb) {
 	});
 };
 
+/**
+ * Delets all elements in the directory
+ */
 FlickrScreensaver.prototype.cleanDirectory = function() {
 	var target = this.directory;
 
