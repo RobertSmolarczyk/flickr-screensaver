@@ -1,0 +1,10 @@
+{
+	"flickr": {
+		"group_id": "63277308@N00",
+		"api_key": "YOUR_API_KEY",
+		"secret":  "YOUR_API_SECRET"
+	},
+	"targetDiretory": "/Users/YOUR_USERNAME/Pictures/FOLDER_TO_SAVE_IMAGES/",
+	"cleanDirectory": false,
+	"limit": 100
+}
